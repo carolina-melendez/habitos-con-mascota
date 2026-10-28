@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Detalles de crecimiento">
+<path id="Vector" d="M48 125C39.3333 105 31.6667 93.6667 25 91C25 107 32.6667 118.333 48 125ZM130 127C139.333 105.667 149 93 159 89C159 108.333 149.333 121 130 127Z" fill="#A8BFA3"/>
+<g id="Group">
+<path id="Vector_2" d="M34 98C38.4183 98 42 94.4183 42 90C42 85.5817 38.4183 82 34 82C29.5817 82 26 85.5817 26 90C26 94.4183 29.5817 98 34 98Z" fill="#F2B096"/>
+<path id="Vector_3" d="M155 96C159.418 96 163 92.4183 163 88C163 83.5817 159.418 80 155 80C150.582 80 147 83.5817 147 88C147 92.4183 150.582 96 155 96Z" fill="#F2B096"/>
+</g>
+<path id="Vector_4" d="M34 93C35.6569 93 37 91.6569 37 90C37 88.3431 35.6569 87 34 87C32.3431 87 31 88.3431 31 90C31 91.6569 32.3431 93 34 93Z" fill="#FFF7E8"/>
+<path id="Vector_5" d="M155 91C156.657 91 158 89.6569 158 88C158 86.3431 156.657 85 155 85C153.343 85 152 86.3431 152 88C152 89.6569 153.343 91 155 91Z" fill="#FFF7E8"/>
+<path id="Vector_6" d="M68 132C82.6667 141.333 97.3333 141.333 112 132" stroke="#A8BFA3" stroke-width="7" stroke-linecap="round"/>
+</g>
+</svg>

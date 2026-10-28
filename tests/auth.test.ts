@@ -1,0 +1,55 @@
+import { flushPromises, mount } from '@vue/test-utils'
+import { beforeEach,describe,expect,it,vi } from 'vitest'
+const actions = vi.hoisted(()=>({login:vi.fn(),register:vi.fn(),recover:vi.fn(),push:vi.fn()}))
+vi.mock('../src/stores/account',()=>({useAccountStore:()=>actions}))
+vi.mock('vue-router',()=>({useRouter:()=>({push:actions.push})}))
+import AuthView from '../src/views/AuthView.vue'
+beforeEach(()=>{vi.resetAllMocks();actions.login.mockResolvedValue(undefined);actions.register.mockResolvedValue(false);actions.recover.mockResolvedValue(undefined)})
+
+describe('formularios de cuenta', () => {
+  it('valida el correo y permite mostrar la contraseña sin enviarla', async () => {
+    const wrapper = mount(AuthView, { props: { mode: 'login' }, global: { stubs: { GardenLink: true } } })
+    await wrapper.find('form').trigger('submit')
+    expect(wrapper.text()).toContain('Escribe un correo válido.')
+    await wrapper.find('#account-email').setValue('demo@example.com')
+    await wrapper.find('#account-password').setValue('demo-only-123')
+    await wrapper.find('.password-toggle').trigger('click')
+    expect(wrapper.find('#account-password').attributes('type')).toBe('text')
+    await wrapper.find('form').trigger('submit')
+    await flushPromises()
+    expect(actions.login).toHaveBeenCalledWith('demo@example.com','demo-only-123')
+    expect(actions.push).toHaveBeenCalledWith('/jardin/mi-dia')
+    expect((wrapper.find('#account-password').element as HTMLInputElement).value).toBe('')
+    expect(wrapper.findAll('[role="alert"]')).toHaveLength(0)
+  })
+  it('requiere confirmar la misma contraseña al registrarse', async () => {
+    const wrapper = mount(AuthView, { props: { mode: 'register' }, global: { stubs: { GardenLink: true } } })
+    await wrapper.find('#account-name').setValue('Demo')
+    await wrapper.find('#account-email').setValue('demo@example.com')
+    await wrapper.find('#account-password').setValue('demo-only-123')
+    await wrapper.find('#account-confirmation').setValue('different')
+    await wrapper.find('form').trigger('submit')
+    expect(wrapper.text()).toContain('Las contraseñas no coinciden.')
+    expect(wrapper.find('[role="status"]').exists()).toBe(false)
+    expect(actions.register).not.toHaveBeenCalled()
+  })
+  it('no navega cuando el acceso falla',async()=>{
+    actions.login.mockRejectedValue(new Error('El correo o la contraseña no coinciden.'))
+    const wrapper=mount(AuthView,{props:{mode:'login'},global:{stubs:{GardenLink:true}}})
+    await wrapper.find('#account-email').setValue('demo@example.com');await wrapper.find('#account-password').setValue('wrong')
+    await wrapper.find('form').trigger('submit');await flushPromises()
+    expect(wrapper.text()).toContain('no coinciden');expect(actions.push).not.toHaveBeenCalled()
+  })
+  it('espera confirmar el correo sin fingir acceso',async()=>{
+    const wrapper=mount(AuthView,{props:{mode:'register'},global:{stubs:{GardenLink:true}}})
+    await wrapper.find('#account-name').setValue('Demo');await wrapper.find('#account-email').setValue('demo@example.com')
+    await wrapper.find('#account-password').setValue('demo-only-123');await wrapper.find('#account-confirmation').setValue('demo-only-123')
+    await wrapper.find('form').trigger('submit');await flushPromises()
+    expect(wrapper.text()).toContain('Revisa tu correo');expect(actions.push).not.toHaveBeenCalled()
+  })
+  it('recuperación no revela si existe la cuenta',async()=>{
+    const wrapper=mount(AuthView,{props:{mode:'recover'},global:{stubs:{GardenLink:true}}})
+    await wrapper.find('#account-email').setValue('demo@example.com');await wrapper.find('form').trigger('submit');await flushPromises()
+    expect(actions.recover).toHaveBeenCalledWith('demo@example.com');expect(wrapper.text()).toContain('Si el correo corresponde a una cuenta')
+  })
+})

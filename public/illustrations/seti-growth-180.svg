@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Detalles de crecimiento">
+<g id="Vector">
+<path d="M44 137V123ZM140 137V123Z" fill="black"/>
+<path d="M44 137V123M140 137V123" stroke="#A8BFA3" stroke-width="5"/>
+</g>
+<path id="Vector_2" d="M24 124C27.3333 111.333 34 105 44 105C54 105 60.6667 111.333 64 124H24Z" fill="#D994A4"/>
+<path id="Vector_3" d="M121 124C124.333 111.333 130.667 105 140 105C149.333 105 155.667 111.333 159 124H121Z" fill="#D994A4"/>
+<path id="Vector_4" d="M41 118C42.6569 118 44 116.657 44 115C44 113.343 42.6569 112 41 112C39.3431 112 38 113.343 38 115C38 116.657 39.3431 118 41 118Z" fill="#FFF7E8"/>
+<path id="Vector_5" d="M139 117C140.657 117 142 115.657 142 114C142 112.343 140.657 111 139 111C137.343 111 136 112.343 136 114C136 115.657 137.343 117 139 117Z" fill="#FFF7E8"/>
+</g>
+</svg>

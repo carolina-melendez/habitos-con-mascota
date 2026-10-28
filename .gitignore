@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+tmp/
+test-results/
+*.log
+/docs/bloque-*.md
+brotito-historial-y-edicion.md

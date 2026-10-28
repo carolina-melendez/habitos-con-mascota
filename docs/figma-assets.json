@@ -1,0 +1,221 @@
+{
+  "nodes": {
+    "semillin": "3:89",
+    "seti": "3:60",
+    "selection": "3:268",
+    "flori": "21:1179",
+    "access": "18:1021",
+    "musguito": "3:48",
+    "welcome": "3:227",
+    "lumi": "3:75",
+    "templates": "6:200",
+    "configure": "6:238",
+    "registerWater": "6:285",
+    "celebration": "6:477",
+    "dashboard": "3:372",
+    "growth": "11:453",
+    "shop": "11:590",
+    "floriStages": "44:5216",
+    "equipped": "11:883",
+    "approvedRules": "44:5748",
+    "inventory": "11:810",
+    "accessory": "11:701",
+    "correction": "44:5544",
+    "history": "15:905",
+    "habitDetail": "15:1021",
+    "historicalDay": "15:1066",
+    "editHabit": "15:1109"
+  },
+  "source": "Figma SVG exports",
+  "assets": [
+    {
+      "bytes": 3038,
+      "file": "brotito-access.svg"
+    },
+    {
+      "bytes": 3620,
+      "file": "brotito-welcome.svg"
+    },
+    {
+      "bytes": 2284,
+      "file": "corona-100.svg"
+    },
+    {
+      "bytes": 2316,
+      "file": "corona-130.svg"
+    },
+    {
+      "bytes": 1668,
+      "file": "corona-180.svg"
+    },
+    {
+      "bytes": 2284,
+      "file": "corona-200.svg"
+    },
+    {
+      "bytes": 2314,
+      "file": "corona-230.svg"
+    },
+    {
+      "bytes": 3948,
+      "file": "flori-base-100.svg"
+    },
+    {
+      "bytes": 3957,
+      "file": "flori-base-110.svg"
+    },
+    {
+      "bytes": 3953,
+      "file": "flori-base-130.svg"
+    },
+    {
+      "bytes": 3767,
+      "file": "flori-base-150.svg"
+    },
+    {
+      "bytes": 3965,
+      "file": "flori-base-200.svg"
+    },
+    {
+      "bytes": 3978,
+      "file": "flori-base-230.svg"
+    },
+    {
+      "bytes": 2442,
+      "file": "flori-bloom-110.svg"
+    },
+    {
+      "bytes": 1799,
+      "file": "flori-bloom-180.svg"
+    },
+    {
+      "bytes": 1301,
+      "file": "flori-canopy-110.svg"
+    },
+    {
+      "bytes": 951,
+      "file": "flori-canopy-180.svg"
+    },
+    {
+      "bytes": 3741,
+      "file": "flori-card.svg"
+    },
+    {
+      "bytes": 2849,
+      "file": "flori-celebration.svg"
+    },
+    {
+      "bytes": 3295,
+      "file": "flori-companion.svg"
+    },
+    {
+      "bytes": 1134,
+      "file": "flori-garden-back-110.svg"
+    },
+    {
+      "bytes": 843,
+      "file": "flori-garden-back-180.svg"
+    },
+    {
+      "bytes": 1076,
+      "file": "flori-garden-front-110.svg"
+    },
+    {
+      "bytes": 828,
+      "file": "flori-garden-front-180.svg"
+    },
+    {
+      "bytes": 1637,
+      "file": "flori-growth-110.svg"
+    },
+    {
+      "bytes": 1211,
+      "file": "flori-growth-180.svg"
+    },
+    {
+      "bytes": 2849,
+      "file": "flori-hero.svg"
+    },
+    {
+      "bytes": 1130,
+      "file": "gafas-130.svg"
+    },
+    {
+      "bytes": 957,
+      "file": "gafas-180.svg"
+    },
+    {
+      "bytes": 1533,
+      "file": "garden.svg"
+    },
+    {
+      "bytes": 436,
+      "file": "glass-empty.svg"
+    },
+    {
+      "bytes": 437,
+      "file": "glass-filled.svg"
+    },
+    {
+      "bytes": 2950,
+      "file": "lumi-card.svg"
+    },
+    {
+      "bytes": 671,
+      "file": "lumi-growth-180.svg"
+    },
+    {
+      "bytes": 2319,
+      "file": "lumi-hero.svg"
+    },
+    {
+      "bytes": 2687,
+      "file": "musguito-card.svg"
+    },
+    {
+      "bytes": 1278,
+      "file": "musguito-growth-180.svg"
+    },
+    {
+      "bytes": 2113,
+      "file": "musguito-hero.svg"
+    },
+    {
+      "bytes": 494,
+      "file": "panuelo-130.svg"
+    },
+    {
+      "bytes": 410,
+      "file": "panuelo-180.svg"
+    },
+    {
+      "bytes": 2872,
+      "file": "semillin-card.svg"
+    },
+    {
+      "bytes": 850,
+      "file": "semillin-growth-180.svg"
+    },
+    {
+      "bytes": 2292,
+      "file": "semillin-hero.svg"
+    },
+    {
+      "bytes": 3029,
+      "file": "seti-card.svg"
+    },
+    {
+      "bytes": 946,
+      "file": "seti-growth-180.svg"
+    },
+    {
+      "bytes": 2397,
+      "file": "seti-hero.svg"
+    },
+    {
+      "bytes": 3136,
+      "file": "flori-history.svg"
+    }
+  ],
+  "fileKey": "2z9yZOWwmcrh54MeAIqElQ"
+}
